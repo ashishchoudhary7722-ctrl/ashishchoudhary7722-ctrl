@@ -13,61 +13,82 @@
 
 ---
 
-## What I Do
+## Who I Am
 
-I'm a TPM with **5+ years** delivering $1M–$5M enterprise programs — Salesforce CRM, Commerce Cloud, and Order-to-Cash platforms.
+TPM with **5+ years** delivering **$1M–$5M enterprise programs** — Salesforce CRM, Commerce Cloud, Order-to-Cash.
 
-The difference: I also **build the AI tools** that run those programs.
+The difference: I also **build the AI systems** that run those programs.
 
-> Currently leading a **31-brand CRM migration** at Forsys Inc., managing 30+ engineers across Sales Cloud, Revenue Cloud, CPQ, CLM, and MuleSoft — while building internal AI systems to automate delivery workflows.
+> Currently leading a **31-brand CRM migration** at Forsys Inc., managing 30+ engineers across Sales Cloud, Revenue Cloud, CPQ, CLM, and MuleSoft integrations.
 
 ---
 
-## Flagship Project
+## Start Here → Flagship Project
 
 ### [PM-Agents](https://github.com/ashishchoudhary7722-ctrl/Git/tree/master/pm-agents) — Multi-Agent AI System for TPM Automation
 
-> The problem: TPMs spend 60–70% of their time on documents, status updates, and planning artifacts that follow predictable patterns. I automated them.
+> **The problem:** TPMs spend 60–70% of their time on documents, status updates, and planning artifacts that follow predictable patterns.
+> **My solution:** 3 specialized AI agents that automate all of it.
 
-**What it does:**
+**Agent Architecture:**
 
-| Agent | Role |
-|---|---|
-| **Alpha** | Sprint management, delivery tracking, go-live readiness |
-| **Beta** | Stakeholder comms, exec summaries, steering committee updates |
-| **Casa** | Requirements, user stories, acceptance criteria, PRDs |
+```mermaid
+graph TD
+    U[User Message] --> F[Flask Backend]
+    F --> TP[ThreadPoolExecutor - 3 parallel calls]
+    TP --> A[Alpha\nDelivery & Sprint Manager]
+    TP --> B[Beta\nStakeholder Communication]
+    TP --> C[Casa\nRequirements & BA]
+    A --> H[Shared Session History]
+    B --> H
+    C --> H
+    H --> R[Single Combined Response]
 
-**How it works:**
-
-```
-User Message
-    │
-    ▼
-┌─────────────────────────────────────────┐
-│           Flask Backend                  │
-│   ThreadPoolExecutor (3 parallel calls) │
-└────┬──────────────┬──────────────┬──────┘
-     │              │              │
-     ▼              ▼              ▼
-  Alpha           Beta           Casa
-(Delivery)     (Comms)       (Requirements)
-     │              │              │
-     └──────────────┴──────────────┘
-                    │
-              Shared session
-              history context
-                    │
-                    ▼
-           Single chat response
+    style A fill:#4f46e5,color:#fff
+    style B fill:#0891b2,color:#fff
+    style C fill:#059669,color:#fff
 ```
 
 **Impact:**
-- 60–70% reduction in manual TPM documentation time
-- Instant L3/L4 work breakdown from a single prompt
-- PRDs, RAID logs, sprint readiness — on demand
-- Deployed on live Salesforce program data
+- `60–70%` reduction in TPM documentation time
+- L3/L4 breakdown, PRDs, RAID logs, sprint readiness — on demand
+- Deployed on a live $5M+ Salesforce enterprise program
 
 **Stack:** `Python` · `Flask` · `Anthropic Claude` · `ThreadPoolExecutor` · `Vanilla JS`
+
+---
+
+## How I Think About Systems
+
+**LLM Orchestration (PM-Agents):**
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Flask
+    participant Agents as 3 Agents (parallel)
+    participant Claude as Anthropic Claude API
+
+    User->>Flask: Message + session history
+    Flask->>Agents: 3 simultaneous API calls
+    Agents->>Claude: Specialized system prompts
+    Claude-->>Agents: Domain-specific responses
+    Agents-->>Flask: Alpha + Beta + Casa outputs
+    Flask-->>User: Combined team response
+```
+
+**Enterprise Delivery Flow (what I manage):**
+
+```mermaid
+graph LR
+    CRM[C-CRM\nCore CRM] --> BCRM[B-CRM\nBrand CRM]
+    BCRM --> SOM[SOM\nOrder Mgmt]
+    SOM --> SFCC[SFCC\nCommerce Cloud]
+    MU[MuleSoft\nIntegration Layer] --> CRM & BCRM & SOM & SFCC
+
+    style MU fill:#f59e0b,color:#fff
+    style SFCC fill:#00A1E0,color:#fff
+```
 
 ---
 
@@ -75,58 +96,10 @@ User Message
 
 ### [Job Agent](https://github.com/ashishchoudhary7722-ctrl/Git/tree/master/job-agent) — Automated Job Outreach Pipeline
 
-End-to-end job application automation:
-- Searches and applies on LinkedIn Easy Apply + Naukri + company portals
-- Sends personalized referral messages to LinkedIn connections with CV attached
-- Attaches to your existing logged-in Chrome — zero stored credentials
+- End-to-end automation: searches, applies, and sends referral messages on LinkedIn + Naukri
+- Attaches CV automatically — zero stored credentials (uses Chrome remote debugging)
 
-**Stack:** `Python` · `Selenium` · `Chrome Remote Debugging` · `CSV logging`
-
----
-
-## Engineering Depth
-
-**How I think about systems:**
-
-```
-Enterprise Program Data
-        │
-        ▼
-┌───────────────────┐
-│   LLM Agents      │  ← Prompt engineering + role specialization
-│   (Claude API)    │
-└────────┬──────────┘
-         │ Structured output
-         ▼
-┌───────────────────┐
-│  Shared Context   │  ← Session history, cross-agent awareness
-│     Store         │
-└────────┬──────────┘
-         │
-         ▼
-┌───────────────────┐
-│  Flask REST API   │  ← /chat, /clear, session management
-└────────┬──────────┘
-         │
-         ▼
-┌───────────────────┐
-│   Web UI          │  ← Real-time multi-agent responses
-└───────────────────┘
-```
-
-**On the delivery side:**
-
-```
-Program Scope
-    │
-    ├── L1: Epic / Feature
-    ├── L2: Module / Track
-    ├── L3: Story / Task      ← PM-Agents automates this
-    └── L4: Sub-task / AC     ← PM-Agents automates this
-
-Cross-system flow I manage:
-C-CRM → B-CRM → SOM → SFCC/CloudCraze (MuleSoft integration layer)
-```
+`Python` · `Selenium` · `Chrome Remote Debugging`
 
 ---
 
@@ -164,19 +137,19 @@ C-CRM → B-CRM → SOM → SFCC/CloudCraze (MuleSoft integration layer)
 
 | Program | Scale | Outcome |
 |---|---|---|
-| CRM Migration | 31 brands, 7M alumni | Ongoing — multi-track delivery |
+| CRM Migration | 31 brands · 7M alumni | Multi-track delivery in progress |
 | Salesforce Build | Sales Cloud + Revenue Cloud + CPQ | Zero production incidents |
-| PM-Agents | Internal AI tooling | 60–70% TPM overhead reduction |
-| Capgemini PMO | €1.5M project | €30K/month savings, 10% efficiency gain |
+| PM-Agents | Internal AI tooling | 60–70% TPM overhead cut |
+| Capgemini PMO | €1.5M project · Heathrow + Coca-Cola | €30K/month savings · 10% efficiency gain |
 
 ---
 
 ## Certifications
 
-![PMP](https://img.shields.io/badge/PMP-Project%20Management%20Professional-blue?style=flat-square)
-![PSM](https://img.shields.io/badge/PSM%20I-Professional%20Scrum%20Master-lightblue?style=flat-square)
+![PMP](https://img.shields.io/badge/PMP-Project%20Management%20Professional-0052CC?style=flat-square)
+![PSM](https://img.shields.io/badge/PSM%20I-Professional%20Scrum%20Master-87CEEB?style=flat-square)
 ![RCA](https://img.shields.io/badge/RCA%C2%AE-Revenue%20Cloud%20Associate%20%7C%20Salesforce-00A1E0?style=flat-square)
-![PMP](https://img.shields.io/badge/Fit2Lead-FranklinCovey-orange?style=flat-square)
+![Fit2Lead](https://img.shields.io/badge/Fit2Lead-FranklinCovey-FF6B35?style=flat-square)
 
 ---
 
