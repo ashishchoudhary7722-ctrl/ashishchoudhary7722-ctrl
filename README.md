@@ -1,64 +1,122 @@
-# Hi, I'm Ashish Choudhary 👋
+<div align="center">
 
-**Senior Delivery Manager · Technical Program Manager · GenAI Builder**
+# Ashish Choudhary
 
-TPM with 5+ years delivering large-scale Salesforce, CRM, and Commerce programs. I don't just manage programs — I build AI tools to automate them.
+### Senior Delivery Manager · Technical Program Manager · GenAI Builder
 
-Currently leading a **31-brand CRM migration** at Forsys for a 7M-alumni EdTech company, while running a Salesforce Sales Cloud + Revenue Cloud build in parallel.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashish-choudhary-iim/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashishchoudhary7722-ctrl)
+
+**Hyderabad, India**
+
+</div>
+
+---
+
+## About Me
+
+TPM with **5+ years** delivering large-scale enterprise programs — Salesforce CRM, Commerce Cloud, and Order-to-Cash platforms.
+
+I don't just manage programs. I **build AI tools to automate them.**
+
+Currently leading a **31-brand CRM migration** at Forsys Inc. across architecture, dev, QA, and BA teams — while running a parallel Salesforce Sales Cloud + Revenue Cloud build.
 
 ---
 
 ## What I Build
 
-### [PM-Agents](https://github.com/ashishchoudhary7722-ctrl/pm-agents) — AI Team for TPM Workflows
-A 3-agent AI system (Alpha, Beta, Casa) that automates program delivery:
-- L3/L4 work breakdown, PRDs, user stories, acceptance criteria
-- Sprint readiness, RAID logs, stakeholder updates
-- Built with: Python · Flask · Anthropic Claude · Vanilla JS
+### [PM-Agents](https://github.com/ashishchoudhary7722-ctrl/Git/tree/master/pm-agents) — AI System for TPM Workflows
 
-### [Job Agent](https://github.com/ashishchoudhary7722-ctrl/job-agent) — Automated Job Outreach
-Selenium-based agent that applies to jobs on LinkedIn and Naukri, and sends personalized referral messages to LinkedIn connections — with CV attached.
-- Built with: Python · Selenium · Chrome Remote Debugging
+> 3 specialized AI agents (Alpha, Beta, Casa) that work as a team in a single chat window
+
+- Auto-generates L3/L4 work breakdown, user stories, acceptance criteria
+- Produces PRDs, RAID logs, sprint readiness, and stakeholder updates
+- Cuts manual TPM work by **60–70%**
+
+```
+Python · Flask · Anthropic Claude (claude-sonnet-4-6) · Vanilla JS
+```
 
 ---
 
-## Tech & Tools
+### [Job Agent](https://github.com/ashishchoudhary7722-ctrl/Git/tree/master/job-agent) — Automated Job Outreach
+
+> Applies to jobs and sends personalized referral messages — hands-free
+
+- Applies on LinkedIn Easy Apply, Naukri, and company career portals
+- Sends referral messages to LinkedIn connections with CV attached
+- Attaches to your existing logged-in Chrome — no stored passwords
+
+```
+Python · Selenium · Chrome Remote Debugging
+```
+
+---
+
+## Tech Stack
 
 **Program Management**
-Jira · Confluence · Miro · Smartsheet · Notion · Roadmunk
 
-**AI / LLM**
-Anthropic Claude · LangChain · Embeddings · Vector DBs · LLM Agents
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
+![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=flat-square&logo=confluence&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white)
+![Miro](https://img.shields.io/badge/Miro-050038?style=flat-square&logo=miro&logoColor=yellow)
 
 **Engineering**
-Python · Flask · Selenium · REST APIs · Git · Postman · VS Code
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+
+**AI / LLM**
+
+![Anthropic](https://img.shields.io/badge/Anthropic%20Claude-191919?style=flat-square&logo=anthropic&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 
 **Enterprise Systems**
-Salesforce CRM · Sales Cloud · Revenue Cloud · SOM · CloudCraze/SFCC · MuleSoft
+
+![Salesforce](https://img.shields.io/badge/Salesforce-00A1E0?style=flat-square&logo=salesforce&logoColor=white)
 
 ---
 
 ## Certifications
 
-- PMP — Project Management Professional
-- PSM I — Professional Scrum Master
-- RCA® — Revenue Cloud Associate, Salesforce
-- Fit2Lead — FranklinCovey
+| Certification | Issuer |
+|---|---|
+| PMP — Project Management Professional | PMI |
+| PSM I — Professional Scrum Master | Scrum.org |
+| RCA® — Revenue Cloud Associate | Salesforce |
+| Fit2Lead | FranklinCovey |
+
+---
+
+## GitHub Stats
+
+<div align="center">
+
+![Ashish's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ashishchoudhary7722-ctrl&show_icons=true&theme=default&hide_border=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ashishchoudhary7722-ctrl&layout=compact&theme=default&hide_border=true)
+
+</div>
 
 ---
 
 ## Currently
 
-- Leading Salesforce CRM migration across 31 brands (Colibri Group)
-- Building Salesforce Sales Cloud + Revenue Cloud for Becker brand
-- Open to Senior TPM / Program Manager / Delivery Manager opportunities
+- Leading 31-brand Salesforce CRM migration — multi-team, multi-track delivery
+- Building Salesforce Sales Cloud + Revenue Cloud for an enterprise client
+- Open to **Senior TPM / Program Manager / Delivery Manager** roles
 
 ---
 
-## Connect
-
-[LinkedIn](https://www.linkedin.com/in/ashish-choudhary-iim/) · Hyderabad, India · vatsashishchoudhary@gmail.com
-
----
+<div align="center">
 
 *"I bring the PM discipline AND the engineering depth. Both together."*
+
+[![LinkedIn](https://img.shields.io/badge/Let's%20Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashish-choudhary-iim/)
+
+</div>
